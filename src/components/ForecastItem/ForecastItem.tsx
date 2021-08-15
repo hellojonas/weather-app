@@ -1,9 +1,11 @@
 import React from 'react';
 import { formatDate } from '../../modules/formatDate';
-import WeatherCard, { IWeatherCardProps } from '../WeatherCard/WheaderCard';
+import TemperatureCard, {
+  ITemperatureCardProps,
+} from '../TemperatureCard/TemperatureCard';
 import styles from './ForecastItem.module.css';
 
-export interface IForecastItemProps extends IWeatherCardProps {
+export interface IForecastItemProps extends ITemperatureCardProps {
   wind: string;
   clouds: string;
   weather: string;
@@ -22,7 +24,7 @@ const ForecastItem: React.FC<IForecastItemProps> = ({
   return (
     <div className={styles.item}>
       <div className={styles.weatherCard}>
-        <WeatherCard max={max} min={min} icon={icon} />
+        <TemperatureCard max={max} min={min} icon={icon} />
         {date ? <div className={styles.date}>{formatDate(date)}</div> : null}
       </div>
 

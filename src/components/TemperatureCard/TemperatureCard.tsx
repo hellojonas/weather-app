@@ -1,14 +1,18 @@
 import React from 'react';
-import styles from './WeatherCard.module.css';
+import styles from './TemperatureCard.module.css';
 import '../../assets/css/weather-icons.css';
 
-export interface IWeatherCardProps {
+export interface ITemperatureCardProps {
   icon?: string;
   min: number;
   max: number;
 }
 
-const WeatherCard: React.FC<IWeatherCardProps> = ({ min, max, icon }) => {
+const TemperatureCard: React.FC<ITemperatureCardProps> = ({
+  min,
+  max,
+  icon,
+}) => {
   // TODO: Map openweather icon
   const iconClasses = ['wi', icon, styles.icon];
 
@@ -33,4 +37,4 @@ const WeatherCard: React.FC<IWeatherCardProps> = ({ min, max, icon }) => {
   );
 };
 
-export default WeatherCard;
+export default TemperatureCard;
