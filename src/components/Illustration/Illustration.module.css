@@ -1,0 +1,19 @@
+.wrapper {
+  text-align: center;
+  color: var(--color-text-normal);
+}
+
+.wrapper > *:last-child {
+  margin-top: 1.6rem;
+}
+
+.illustration {
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.illustration > * {
+  height: 100%;
+}

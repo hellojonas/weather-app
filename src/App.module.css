@@ -1,0 +1,11 @@
+.header {
+  border-bottom: 1px solid var(--color-border-header);
+  height: 9.6rem;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 1.6rem;
+}
+
+.name {
+  color: var(--color-text-normal);
+}

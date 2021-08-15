@@ -1,0 +1,33 @@
+html {
+  --color-background: #282937;
+  --color-surface: #1c1d26;
+  --color-primary: #282937;
+  --color-secondary: #1c1d26;
+  --color-accent: #daaa74;
+  --color-text-normal: #c1c1c1;
+  --color-text-light-1: #e6e6e6;
+  --color-text-light-2: #f3f3f3;
+  --color-text-input-placeholder: #616161;
+  --color-border-header: #424459;
+  --color-border-forecast-item: #2f3140;
+  --color-text-date: #b0b0b0;
+  --color-border-input: #1c1d26;
+  --color-input-active: #2f3140;
+
+  /* index stack */
+  --stack-first: 1;
+  --stack-1: 10;
+  --stack-2: 20;
+  --stack-3: 30;
+  --stack-4: 40;
+  --stack-5: 50;
+  --stack-6: 60;
+  --stack-7: 70;
+  --stack-8: 80;
+  --stack-9: 90;
+  --stack-10: 100;
+  --stack-11: 110;
+  --stack-12: 120;
+  --stack-before-last: 9998;
+  --stack-last: 9999;
+}
