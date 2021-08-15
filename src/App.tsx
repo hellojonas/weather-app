@@ -7,6 +7,7 @@ import Container from './components/Container/Container';
 import Home from './views/Home/Home';
 import Forecast from './views/Forecast/Forecast';
 import { Body1 } from './components/Typography/Typography';
+import PageNotFound from './views/PageNotFound/PageNotFound';
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
           </Route>
           <Route path="/previsao">
             <Forecast />
+          </Route>
+          <Route path="*">
+            <PageNotFound></PageNotFound>
           </Route>
         </Switch>
       </Container>

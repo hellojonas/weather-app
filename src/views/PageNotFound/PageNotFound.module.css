@@ -1,0 +1,14 @@
+.notFound {
+  padding-top: 9.6rem;
+}
+
+.homeLink,
+.homeLink:visited,
+.homeLink:active {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.homeLink:hover {
+  text-decoration: underline;
+}
