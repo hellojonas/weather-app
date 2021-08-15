@@ -5,6 +5,7 @@ html {
   --color-secondary: #1c1d26;
   --color-accent: #daaa74;
   --color-text-normal: #c1c1c1;
+  --color-text-dark: #696969;
   --color-text-light-1: #e6e6e6;
   --color-text-light-2: #f3f3f3;
   --color-text-input-placeholder: #616161;
@@ -13,6 +14,7 @@ html {
   --color-text-date: #b0b0b0;
   --color-border-input: #1c1d26;
   --color-input-active: #2f3140;
+  --color-dropdown-active: #424459;
 
   /* index stack */
   --stack-first: 1;

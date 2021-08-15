@@ -68,3 +68,41 @@
 .activeLink {
   color: var(--color-accent);
 }
+
+.results {
+  /* border: 1px solid red; */
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 3.8rem;
+  width: 18rem;
+  right: 0;
+  list-style: none;
+  background-color: var(--color-surface);
+  padding: 0.8rem 0;
+  min-height: 4rem;
+}
+
+.resultItem {
+  /* border: 1px solid red; */
+  padding: 0.8rem 0.8rem;
+  color: var(--color-text-dark);
+  transition: background-color 200ms, color 200ms;
+}
+
+.resultItem:hover {
+  cursor: pointer;
+  background-color: var(--color-dropdown-active);
+  color: var(--color-text-normal);
+}
+
+.empty {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--color-text-dark);
+  font-size: 1.2rem;
+}
