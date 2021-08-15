@@ -1,0 +1,42 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.weatherCard {
+  flex: 1;
+}
+
+.date {
+  margin-top: 1.6rem;
+  color: var(--color-text-date);
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 0.048em;
+  color: var(--color-accent);
+}
+
+.aside {
+  padding-top: 0.8rem;
+  flex: 1;
+}
+
+.typeWrapper {
+  display: flex;
+}
+
+.typeWrapper:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.type {
+  color: var(--color-text-light-1);
+  font-weight: 500;
+  max-width: 6rem;
+  width: 100%;
+}
+
+.typeValue {
+  color: var(--color-text-normal);
+  font-weight: 300;
+}

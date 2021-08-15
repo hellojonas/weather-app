@@ -1,0 +1,60 @@
+.wrapper {
+  height: 23rem;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: var(--color-surface);
+}
+
+.iconWrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2.6rem;
+}
+
+.icon {
+  font-size: 7.2rem;
+  color: var(--color-text-normal);
+}
+
+.temperature {
+  flex: 0 0 40%;
+  color: var(--color-text-normal);
+  font-weight: 400;
+  letter-spacing: -0.048em;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 2.4rem;
+}
+
+.maxWrapper,
+.minWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.maxWrapper {
+  margin-right: 3.2rem;
+}
+
+.max {
+  font-size: 2.4rem;
+}
+
+.min {
+  font-size: 1.8rem;
+}
+
+.maxBottom,
+.minBottom {
+  font-size: 1.2rem;
+  color: var(--color-text-normal);
+  letter-spacing: 0.08em;
+  font-weight: 400;
+}
