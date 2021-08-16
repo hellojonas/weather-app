@@ -13,7 +13,7 @@ const Forecast: React.FC<IForecastProps> = props => {
         icon="wi-day-cloudy"
         clouds="Limpo"
         weather="Ensolarado"
-        wind="300 m/s, 150°"
+        wind={300}
         date={new Date()}
       />
     </div>
