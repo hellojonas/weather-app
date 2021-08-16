@@ -4,7 +4,7 @@ import { MdSearch } from 'react-icons/md';
 import { NavLink, useHistory, useRouteMatch } from 'react-router-dom';
 import Container from '../Container/Container';
 import { Body2 } from '../Typography/Typography';
-import countriesList from '../../assets/data/city.list.min.json';
+import regionLIst from '../../assets/data/cities.moz.json';
 import { useState } from 'react';
 import { useClickAway } from 'react-use';
 import { useRef } from 'react';
@@ -85,7 +85,7 @@ const NavBar: React.FC<INavBarProps> = props => {
 
     setSuggest(true);
 
-    const matches = (countriesList as IResult[]).filter(county =>
+    const matches = (regionLIst as IResult[]).filter(county =>
       county.name
         .toLocaleLowerCase()
         .match(value.replaceAll(/\\/g, '').toLocaleLowerCase())
