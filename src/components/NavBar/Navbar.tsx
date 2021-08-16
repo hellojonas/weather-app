@@ -79,7 +79,7 @@ const NavBar: React.FC<INavBarProps> = props => {
   const handleInput = (e: FormEvent) => {
     setValue((e.target as HTMLInputElement).value);
 
-    if (value.length < 3) {
+    if (value.length < 2) {
       return;
     }
 
