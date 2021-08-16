@@ -3,6 +3,8 @@ export const formatDate = (date: Date | string) => {
     year: 'numeric',
     month: 'long',
     day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
   });
 
   if (date instanceof Date) {

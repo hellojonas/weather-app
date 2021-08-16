@@ -1,13 +1,12 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { ICoords } from '../components/NavBar/Navbar';
-import { IForecast } from '../types';
+// import { IForecast, IForecastList } from '../types';
 
-const useFetchData = (type: 'current' | 'forecast', coord?: ICoords) => {
-  const [data, setData] = useState<IForecast>();
+const useFetchData = <T>(type: 'current' | 'forecast', coord?: ICoords) => {
+  const [data, setData] = useState<T>();
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
-  // const { lat, lon } = coord;
 
   useEffect(() => {
     const apiUrl = process.env.REACT_APP_OPENWEATHER_API;
@@ -18,7 +17,10 @@ const useFetchData = (type: 'current' | 'forecast', coord?: ICoords) => {
       return;
     }
 
-    const url = `${apiUrl}?lon=${coord.lon}&lat=${coord.lat}&appid=${apiKey}&units=metric&lang=pt`;
+    const url =
+      type === 'current'
+        ? `${apiUrl}/weather?lon=${coord.lon}&lat=${coord.lat}&appid=${apiKey}&units=metric&lang=pt`
+        : `${apiUrl}/forecast?lon=${coord.lon}&lat=${coord.lat}&appid=${apiKey}&units=metric&lang=pt&exclude=current,hourly`;
 
     axios
       .get(url)

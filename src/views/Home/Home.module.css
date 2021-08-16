@@ -2,7 +2,10 @@
   margin-top: 9.6rem;
 }
 
-.title {
+.titleWrapper {
   margin-bottom: 4rem;
+}
+
+.title {
   color: var(--color-text-normal);
 }
