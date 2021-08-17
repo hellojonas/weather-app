@@ -84,6 +84,12 @@
   min-height: 4rem;
 }
 
+@media screen and (max-width: 495px) {
+  .results {
+    left: 0;
+  }
+}
+
 .resultItem {
   /* border: 1px solid red; */
   padding: 0.8rem 0.8rem;

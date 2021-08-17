@@ -36,13 +36,13 @@ const ForecastItem: React.FC<IForecastItemProps> = ({
           <span className={styles.typeValue}>{weather}</span>
         </div> */}
         <div className={styles.typeWrapper}>
-          <span className={styles.type}>Vento: </span>
+          <span className={styles.type}>Vento:&nbsp;</span>
           <span className={styles.typeValue}>
             {wind} m/s, {deg}°
           </span>
         </div>
         <div className={styles.typeWrapper}>
-          <span className={styles.type}>Ceu: </span>
+          <span className={styles.type}>Ceu:&nbsp;</span>
           <span className={styles.typeValue}>{clouds}</span>
         </div>
       </div>
